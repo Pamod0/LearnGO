@@ -17,4 +17,10 @@ func main() {
 
 	mySlice1 = append(mySlice1[1:5])
 	fmt.Println("mySlice2 is: ", mySlice1)
+
+	// remove an element from slice
+
+	var courses = []string{"Python", "Java", "Go", "JavaScript", "Ruby", "C++"}
+
+	fmt.Println("courses are: ", courses)
 }
