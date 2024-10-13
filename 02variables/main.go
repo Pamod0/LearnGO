@@ -34,7 +34,7 @@ func main() {
 
 	// no var style
 
-	numberOfUsers:= 300
+	numberOfUsers := 300
 	fmt.Println(numberOfUsers)
 
 	fmt.Println(LoginToken)
