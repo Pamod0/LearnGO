@@ -2,18 +2,18 @@ package main
 
 import "fmt"
 
-// Pointers in Go are variables that store the memory address of another variable.
-// They are used to reference and manipulate the value stored at that memory address directly.
-
 func main() {
+	// store memory the address of a value using pointers
+	// & operator is used to get the memory address of a variable
+	// * operator is used to get the value stored at that memory address
+
+	var year int = 2021
+	var ptrYear *int = &year
+	fmt.Println("Value of year is: ", year)
+	fmt.Println("Memory address of year is: ", ptrYear)
+
 	var ptr *int
 	fmt.Println("\nValue of ptr is: ", ptr)
-
-	var name *string
-	_name := "Hello"
-	name = &_name
-	fmt.Println("\nMemory address of _name: ", name)
-	fmt.Println("Value of _name: ", _name)
 
 	myNumber := 23
 	var myPtr = &myNumber
